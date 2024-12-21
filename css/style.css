@@ -143,13 +143,14 @@
     .nav-links {
       display: none;
       flex-direction: column;
-      background-color: #db34bc;
+      background-color: #333;
       position: absolute;
       top: 70px;
       left: 0;
       width: 100%;
       padding: 1rem;
       color: #fff;
+      z-index: 100;
     }
   
     .nav-links.active {
