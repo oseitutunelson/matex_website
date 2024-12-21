@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="logo-color.png" type="image/icon type">
     <link rel="stylesheet" href="./css/style.css">
-    <title>matex</title>
+        <title>matex</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="home">
         <nav class="navbar">
             <div class="logo">
                 <img src="logo-color.png">
@@ -52,7 +52,7 @@
                         <h4><b>Fans</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| Discover Exclusive Content and Earn Rewards</h4>
                     </div>
                     <div class="hero_button">
-                        <button>Discover more -></button>
+                        <button id="about">Discover more -></button>
                     </div>
                 </div>
                 <div class="hero_section_two">
@@ -73,7 +73,7 @@
 
                         "Through our governance token, the community has the power to shape the platform’s direction, fostering innovation and inclusivity. Join us as we redefine the adult industry for the modern age.</p>
                 </div>
-                <div class="about_cards">
+                <div class="about_cards" id="about">
                     <div class="about_card">
                         <h4>Decentralized Ownership</h4>
                         <p>All content is tokenized as NFTs, granting creators full ownership and control. No middlemen, no compromises</p>
@@ -102,7 +102,7 @@
                     </div>
                 </div>
             </div>
-            <div class="how_works">
+            <div class="how_works" id="features">
                 <div class="how_works_title">
                     <h3>How it works</h3>
                    <div class="works_works">
@@ -137,7 +137,7 @@
             <div class="banner">
                 <h1>Shape the future of decentralized adult entertainment. Stake your tokens and join the revolution.</h1>
             </div>
-            <div class="token">
+            <div class="token" id="tokenomics">
                 <h3>The Heart of Decentralized Adult Entertainment</h3>
                 <p>Our native token is the lifeblood of the platform. It powers transactions, unlocks exclusive content, and enables governance. Holders can stake tokens to earn rewards and vote on key platform decisions.</p>
                 <h4>Token Distribution</h4>
@@ -153,7 +153,7 @@
                 </ul>
             </div>
       
-            <div class="faq">
+            <div class="faq" id="faq">
                 <div class="faq-header">Frequently Asked Questions</div>
 
 <div class="faq-content">
@@ -219,8 +219,18 @@
   
            
     </div>
+    
 </body>
+<script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
+
 <script>
+    window.sr = ScrollReveal();
+    sr.reveal(".hero")
+    sr.reveal(".about");
+    sr.reveal(".how_works")
+    sr.reveal(".banner")
+    sr.reveal(".token")
+    sr.reveal(".faq")
     // Select the elements
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
